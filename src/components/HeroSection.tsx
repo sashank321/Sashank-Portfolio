@@ -3,7 +3,7 @@ import Magnet from "./Magnet";
 import ContactButton from "./ContactButton";
 import { PORTRAIT_URL } from "../data/marqueeImages";
 
-const NAV_LINKS = ["About", "Price", "Projects", "Contact"];
+const NAV_LINKS = ["About", "Skills", "Projects", "Contact"];
 
 export default function HeroSection() {
   return (
@@ -35,7 +35,7 @@ export default function HeroSection() {
         className="overflow-hidden mt-6 sm:mt-4 md:-mt-5"
       >
         <h1 className="hero-heading w-full whitespace-nowrap font-black uppercase tracking-tight leading-none text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw]">
-          Hi, i&apos;m jack
+          Hi, i&apos;m sashank
         </h1>
       </FadeIn>
 
@@ -69,7 +69,7 @@ export default function HeroSection() {
               fontSize: "clamp(0.75rem, 1.4vw, 1.5rem)",
             }}
           >
-            a 3d creator driven by crafting striking and unforgettable projects
+            a software engineer building thoughtful digital products that combine engineering, clean design, and delightful interactions.
           </span>
         </FadeIn>
 

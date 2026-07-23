@@ -4,7 +4,7 @@ import ContactButton from "./ContactButton";
 import { ABOUT_IMAGES } from "../data/marqueeImages";
 
 const ABOUT_PARAGRAPH =
-  "With more than five years of experience in design, i focus on branding, web design, and user experience, i truly enjoy working with businesses that aim to stand out and present their best image. Let's build something incredible together!";
+  "I'm a Computer Science undergraduate who turns ideas into polished, usable digital products. My work bridges engineering and design — I focus on Frontend Architecture, Machine Learning, Java, Python, and Design Systems, building applications that are structurally sound and delightfully interactive. I believe software should be an experience. Every interface I build prioritizes craftsmanship, precision, and human-centered interaction.";
 
 export default function AboutSection() {
   return (
@@ -77,7 +77,7 @@ export default function AboutSection() {
               className="hero-heading font-black uppercase leading-none tracking-tight"
               style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
             >
-              About me
+              About Sashank
             </span>
           </FadeIn>
 

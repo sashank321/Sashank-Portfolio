@@ -35,6 +35,7 @@ export type Project = {
   number: string;
   name: string;
   category: string;
+  description: string;
   images: {
     col1Top: string;
     col1Bottom: string;
@@ -45,8 +46,9 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     number: "01",
-    name: "Nextlevel Studio",
-    category: "Client",
+    name: "Advertising Sales Analysis",
+    category: "Data Science & Analytics",
+    description: "Analyzing advertising performance across channels using statistical modeling to optimize ROI.",
     images: {
       col1Top: `${cf}hf_20260412_055344_5eff02e0-87a5-41ce-b64f-eb08da8f33db.png&w=1280&q=85`,
       col1Bottom: `${cf}hf_20260412_055431_11d841fd-8b41-46a5-82e4-b04f2407a7d8.png&w=1280&q=85`,
@@ -55,8 +57,9 @@ export const PROJECTS: Project[] = [
   },
   {
     number: "02",
-    name: "Aura Brand Identity",
-    category: "Personal",
+    name: "Cortex AI",
+    category: "AI & Agent Orchestration",
+    description: "An autonomous multi-agent orchestration framework for streaming LLM reasoning and workflow execution.",
     images: {
       col1Top: `${cf}hf_20260412_055654_911201c5-36d9-4bc6-bac7-331adfce159f.png&w=1280&q=85`,
       col1Bottom: `${cf}hf_20260412_055723_5ceda0b8-d9c2-4665-b2e3-83ba19ba76d1.png&w=1280&q=85`,
@@ -65,12 +68,35 @@ export const PROJECTS: Project[] = [
   },
   {
     number: "03",
-    name: "Solaris Digital",
-    category: "Client",
+    name: "Java Applications",
+    category: "Backend & Systems",
+    description: "Robust object-oriented applications demonstrating core software engineering principles.",
     images: {
       col1Top: `${cf}hf_20260412_055759_963cfb0b-4bd1-4b0f-9d0a-09bd6cf95b2f.png&w=1280&q=85`,
       col1Bottom: `${cf}hf_20260412_060108_438f781a-9846-4dcc-89ab-c4e6cb830f5b.png&w=1280&q=85`,
       col2: `${cf}hf_20260412_055818_9d062121-ad7e-46b9-999a-1a6a692ef1ee.png&w=1280&q=85`,
+    },
+  },
+  {
+    number: "04",
+    name: "Machine Learning Models",
+    category: "AI & Predictive Modeling",
+    description: "Neural networks and predictive algorithms for classification and regression tasks.",
+    images: {
+      col1Top: `${cf}hf_20260412_055344_5eff02e0-87a5-41ce-b64f-eb08da8f33db.png&w=1280&q=85`,
+      col1Bottom: `${cf}hf_20260412_055431_11d841fd-8b41-46a5-82e4-b04f2407a7d8.png&w=1280&q=85`,
+      col2: `${cf}hf_20260412_055451_e317bf2d-28d4-48cc-86b0-6f72f25b6327.png&w=1280&q=85`,
+    },
+  },
+  {
+    number: "05",
+    name: "This Portfolio",
+    category: "Frontend Architecture",
+    description: "An interactive engineering experience — particle systems, GSAP choreography, and editorial design.",
+    images: {
+      col1Top: `${cf}hf_20260412_055654_911201c5-36d9-4bc6-bac7-331adfce159f.png&w=1280&q=85`,
+      col1Bottom: `${cf}hf_20260412_055723_5ceda0b8-d9c2-4665-b2e3-83ba19ba76d1.png&w=1280&q=85`,
+      col2: `${cf}hf_20260412_055753_adc5dcbd-a8e6-49c0-b43a-9b030d835cea.png&w=1280&q=85`,
     },
   },
 ];
@@ -84,33 +110,39 @@ export type Service = {
 export const SERVICES: Service[] = [
   {
     number: "01",
-    name: "3D Modeling",
+    name: "Frontend",
     description:
-      "Creation of detailed objects, characters, or environments tailored to specific client needs, ideal for games, products, and visualizations.",
+      "React, Next.js, TypeScript, Tailwind CSS, GSAP, Framer Motion — building performant, interactive user interfaces with modern frameworks and animation libraries.",
   },
   {
     number: "02",
-    name: "Rendering",
+    name: "Backend",
     description:
-      "High-quality, photorealistic renders that showcase designs with custom lighting, textures, and materials to bring concepts to life.",
+      "Node.js, Python, Java, RESTful APIs, GraphQL, Microservices — architecting scalable server-side systems and clean API designs.",
   },
   {
     number: "03",
-    name: "Motion Design",
+    name: "Data & ML",
     description:
-      "Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.",
+      "PyTorch, TensorFlow, Scikit-Learn, Pandas, Jupyter, NumPy — training predictive models, neural networks, and data pipelines for real-world classification and regression tasks.",
   },
   {
     number: "04",
-    name: "Branding",
+    name: "Tools",
     description:
-      "Crafting cohesive visual identities — from logos to full brand systems — that communicate a clear and memorable presence.",
+      "Git / GitHub, Figma, Docker, Vercel, VS Code, CI/CD — leveraging professional-grade tooling for version control, design collaboration, containerization, and deployment.",
   },
   {
     number: "05",
-    name: "Web Design",
+    name: "Java",
     description:
-      "Designing clean, modern, and conversion-focused websites with attention to layout, typography, and user experience.",
+      "Object-oriented programming, multithreading, design patterns, and system architecture — building robust, scalable backend systems with clean, maintainable code.",
+  },
+  {
+    number: "06",
+    name: "DSA",
+    description:
+      "Data Structures & Algorithms — arrays, trees, graphs, dynamic programming, and complexity analysis for solving complex computational problems efficiently.",
   },
 ];
 

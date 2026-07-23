@@ -83,6 +83,12 @@ function ProjectCard({
               >
                 {project.name}
               </span>
+              <p
+                className="mt-1 font-light leading-relaxed text-[#D7E2EA]/40"
+                style={{ fontSize: "clamp(0.75rem, 1.2vw, 1rem)" }}
+              >
+                {project.description}
+              </p>
             </div>
           </div>
           <LiveProjectButton />

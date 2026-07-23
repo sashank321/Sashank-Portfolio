@@ -7,7 +7,7 @@ type LiveProjectButtonProps = {
  * hover fills the background at 10% opacity.
  */
 export default function LiveProjectButton({
-  label = "Live Project",
+  label = "View Project",
   className = "",
   ...rest
 }: LiveProjectButtonProps) {
