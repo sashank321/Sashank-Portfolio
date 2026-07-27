@@ -6,3 +6,8 @@ All notable changes to this project will be documented in this file.
 
 - Added `AsciiHead` component rendering human head using Three.js and AsciiEffect.
 
+## [2026-07-27] -  Add starry background and local time components
+
+- Implemented custom Canvas-based `StarryBackground` with falling stars.
+- Added real-time tracking `LocalTime` component.
+
