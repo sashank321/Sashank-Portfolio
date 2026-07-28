@@ -11,3 +11,9 @@ All notable changes to this project will be documented in this file.
 - Implemented custom Canvas-based `StarryBackground` with falling stars.
 - Added real-time tracking `LocalTime` component.
 
+## [2026-07-28] -  Implement project display details and flap animation
+
+- Added overlay details for project cards.
+- Created custom `LiveProjectButton` for external project links.
+- Added nostalgic `SplitFlapDisplay` text effect.
+
