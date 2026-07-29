@@ -17,3 +17,8 @@ All notable changes to this project will be documented in this file.
 - Created custom `LiveProjectButton` for external project links.
 - Added nostalgic `SplitFlapDisplay` text effect.
 
+## [2026-07-29] -  Add hover image reveal and dynamic font weight proximity
+
+- Implemented cursor distance-based font-weight scaling.
+- Created `HoverImageReveal` effect displaying background images behind list items on hover.
+
