@@ -22,3 +22,8 @@ All notable changes to this project will be documented in this file.
 - Implemented cursor distance-based font-weight scaling.
 - Created `HoverImageReveal` effect displaying background images behind list items on hover.
 
+## [2026-07-30] -  Integrate footer layout and connect section text effects
+
+- Added fully immersive `FooterSection` layout.
+- Implemented `TextScramble` decoder script for emails on viewport entry.
+
