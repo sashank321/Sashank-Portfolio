@@ -27,3 +27,8 @@ All notable changes to this project will be documented in this file.
 - Added fully immersive `FooterSection` layout.
 - Implemented `TextScramble` decoder script for emails on viewport entry.
 
+## [2026-07-31] -  Implement brand icons in the interactive MagneticDock
+
+- Created full Mac-style `MagneticDock` utilizing physics-based hover scaling.
+- Populated dock with brand icons from `react-icons`.
+
