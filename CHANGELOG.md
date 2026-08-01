@@ -32,3 +32,9 @@ All notable changes to this project will be documented in this file.
 - Created full Mac-style `MagneticDock` utilizing physics-based hover scaling.
 - Populated dock with brand icons from `react-icons`.
 
+## [2026-08-01] - : Add Lenis smooth scroll and configure global stylesheet
+
+- Wrapped portfolio container with `@studio-freight/react-lenis` smooth scrolling.
+- Cleaned global CSS to resolve scroll-behavior conflicts.
+- Added new typography sheets (Anton/Oswald).
+

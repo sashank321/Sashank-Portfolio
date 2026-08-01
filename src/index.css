@@ -21,7 +21,11 @@ body,
 }
 
 html {
-  scroll-behavior: smooth;
+  scrollbar-width: none; /* For Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }
 
 body {
@@ -37,5 +41,61 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.shimmer-red {
+  background: linear-gradient(
+    110deg,
+    #cc0000 40%,
+    #ff6666 50%,
+    #cc0000 60%
+  );
+  background-size: 200% auto;
   color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 10s linear infinite;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-shadow-depth {
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.8)) drop-shadow(0px 4px 6px rgba(0,0,0, 0.4));
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translateX(0) translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  10% {
+    transform: translateX(100vw) translateY(100vh) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(100vw) translateY(100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,1));
+  animation: shooting-star 10s linear infinite;
+  opacity: 0;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 1));
 }
