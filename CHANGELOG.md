@@ -38,3 +38,9 @@ All notable changes to this project will be documented in this file.
 - Cleaned global CSS to resolve scroll-behavior conflicts.
 - Added new typography sheets (Anton/Oswald).
 
+## [2026-08-02] - tor: Fine-tune layout alignments, positions, and responsiveness
+
+- Adjusted z-index stacking layers for overlapping sections.
+- Repositioned 3D ASCII portrait to far bottom right.
+- Polished font sizing, overlaps, and viewport paddings.
+
