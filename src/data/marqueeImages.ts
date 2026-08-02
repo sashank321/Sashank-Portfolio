@@ -36,6 +36,11 @@ export type Project = {
   name: string;
   category: string;
   description: string;
+  year: string;
+  overview: string;
+  problem: string;
+  result: string;
+  technologies: string[];
   images: {
     col1Top: string;
     col1Bottom: string;
@@ -49,6 +54,11 @@ export const PROJECTS: Project[] = [
     name: "Advertising Sales Analysis",
     category: "Data Science & Analytics",
     description: "Analyzing advertising performance across channels using statistical modeling to optimize ROI.",
+    year: "2025",
+    overview: "This project focused on analyzing large datasets to determine the most effective advertising channels. By leveraging statistical modeling and data visualization, the goal was to uncover hidden patterns that drive conversion.",
+    problem: "Sales data is often siloed and difficult to interpret without statistical context. Identifying which ad spend directly correlates with sales requires rigorous cleaning and correlation analysis.",
+    result: "The analysis successfully identified the top-performing channels, providing actionable recommendations to optimize future marketing budgets.",
+    technologies: ["Python", "Pandas", "Scikit-Learn", "Matplotlib", "Jupyter"],
     images: {
       col1Top: `${cf}hf_20260412_055344_5eff02e0-87a5-41ce-b64f-eb08da8f33db.png&w=1280&q=85`,
       col1Bottom: `${cf}hf_20260412_055431_11d841fd-8b41-46a5-82e4-b04f2407a7d8.png&w=1280&q=85`,
@@ -60,6 +70,11 @@ export const PROJECTS: Project[] = [
     name: "Cortex AI",
     category: "AI & Agent Orchestration",
     description: "An autonomous multi-agent orchestration framework for streaming LLM reasoning and workflow execution.",
+    year: "2026",
+    overview: "Cortex AI is an advanced multi-agent execution framework designed to coordinate autonomous AI agents. It handles real-time token streaming, tool call execution, and state persistence with low latency.",
+    problem: "Orchestrating multi-step AI agent workflows introduces high latency, state sync bottlenecks, and complex prompt management challenges.",
+    result: "Delivered an enterprise-grade agent orchestration runtime capable of sub-100ms multi-step task resolution.",
+    technologies: ["Python", "FastAPI", "PyTorch", "Redis", "WebSockets", "TypeScript"],
     images: {
       col1Top: `${cf}hf_20260412_055654_911201c5-36d9-4bc6-bac7-331adfce159f.png&w=1280&q=85`,
       col1Bottom: `${cf}hf_20260412_055723_5ceda0b8-d9c2-4665-b2e3-83ba19ba76d1.png&w=1280&q=85`,
@@ -71,6 +86,11 @@ export const PROJECTS: Project[] = [
     name: "Java Applications",
     category: "Backend & Systems",
     description: "Robust object-oriented applications demonstrating core software engineering principles.",
+    year: "2025",
+    overview: "This project encompasses a suite of Java-based applications built to solve specific algorithmic and system-level problems, emphasizing clean architecture and efficient resource management.",
+    problem: "Building scalable backend logic requires a deep understanding of object-oriented design patterns, memory management, and data structures.",
+    result: "A portfolio of highly performant, well-documented Java applications that run reliably under load.",
+    technologies: ["Java", "Maven", "JUnit", "OOP"],
     images: {
       col1Top: `${cf}hf_20260412_055759_963cfb0b-4bd1-4b0f-9d0a-09bd6cf95b2f.png&w=1280&q=85`,
       col1Bottom: `${cf}hf_20260412_060108_438f781a-9846-4dcc-89ab-c4e6cb830f5b.png&w=1280&q=85`,
@@ -82,6 +102,11 @@ export const PROJECTS: Project[] = [
     name: "Machine Learning Models",
     category: "AI & Predictive Modeling",
     description: "Neural networks and predictive algorithms for classification and regression tasks.",
+    year: "2025",
+    overview: "This ongoing project involves designing, training, and deploying various machine learning models to tackle real-world datasets, ranging from natural language processing to computer vision.",
+    problem: "Raw data holds immense potential, but extracting predictive value requires carefully tuned algorithms and robust evaluation metrics.",
+    result: "Successfully deployed models with high accuracy metrics, demonstrating practical application of AI concepts.",
+    technologies: ["Python", "PyTorch", "TensorFlow", "Scikit-Learn"],
     images: {
       col1Top: `${cf}hf_20260412_055344_5eff02e0-87a5-41ce-b64f-eb08da8f33db.png&w=1280&q=85`,
       col1Bottom: `${cf}hf_20260412_055431_11d841fd-8b41-46a5-82e4-b04f2407a7d8.png&w=1280&q=85`,
@@ -93,6 +118,11 @@ export const PROJECTS: Project[] = [
     name: "This Portfolio",
     category: "Frontend Architecture",
     description: "An interactive engineering experience — particle systems, GSAP choreography, and editorial design.",
+    year: "2026",
+    overview: "The goal was to move beyond templates and build an interactive experience that tells a story with every scroll.",
+    problem: "Standard portfolios lack emotional resonance. The challenge was to create an interface that surprises users while remaining highly performant.",
+    result: "A highly polished interactive experience that communicates engineering craftsmanship.",
+    technologies: ["Next.js", "TypeScript", "GSAP", "Canvas", "Lenis"],
     images: {
       col1Top: `${cf}hf_20260412_055654_911201c5-36d9-4bc6-bac7-331adfce159f.png&w=1280&q=85`,
       col1Bottom: `${cf}hf_20260412_055723_5ceda0b8-d9c2-4665-b2e3-83ba19ba76d1.png&w=1280&q=85`,

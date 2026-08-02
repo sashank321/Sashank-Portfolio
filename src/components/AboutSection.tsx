@@ -1,6 +1,5 @@
 import FadeIn from "./FadeIn";
 import AnimatedText from "./AnimatedText";
-import ContactButton from "./ContactButton";
 import { ABOUT_IMAGES } from "../data/marqueeImages";
 
 const ABOUT_PARAGRAPH =
@@ -77,7 +76,7 @@ export default function AboutSection() {
               className="hero-heading font-black uppercase leading-none tracking-tight"
               style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
             >
-              About Sashank
+              About Me
             </span>
           </FadeIn>
 
@@ -87,8 +86,6 @@ export default function AboutSection() {
             style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
           />
         </div>
-
-        <ContactButton />
       </div>
     </section>
   );
