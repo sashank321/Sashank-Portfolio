@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
+import { useInView } from "framer-motion";
 
 export default function TextScramble({ text, className }: { text: string; className?: string }) {
   const [displayText, setDisplayText] = useState(text.replace(/./g, "\u00A0")); // Start blank

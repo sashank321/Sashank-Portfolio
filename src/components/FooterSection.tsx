@@ -4,11 +4,7 @@ import StarryBackground from "./StarryBackground";
 import TextScramble from "./TextScramble";
 import MagneticDock from "./ui/magnetic-dock";
 
-const SOCIAL_LINKS = [
-  { name: "LINKEDIN", url: "https://www.linkedin.com/in/sashank-junnuru-63a4b8395/" },
-  { name: "GITHUB", url: "https://github.com/sashank321" },
-  { name: "TWITTER", url: "https://twitter.com" },
-];
+
 
 export default function FooterSection() {
   const currentYear = new Date().getFullYear();

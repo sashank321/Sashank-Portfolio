@@ -97,5 +97,7 @@ body {
   animation: shooting-star 10s linear infinite;
   opacity: 0;
   border-radius: 50%;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 1));
+  /* Static glow only — drop-shadow() inside an infinite keyframe repaints
+     every frame. box-shadow is compositor-cheap. */
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.6);
 }
