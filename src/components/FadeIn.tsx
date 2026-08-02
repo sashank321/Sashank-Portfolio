@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import type { ReactNode } from "react";
+import { useMemo, type ReactNode } from "react";
 
 type FadeInProps = {
   children: ReactNode;
@@ -27,7 +27,8 @@ export default function FadeIn({
   as = "div",
   className = "",
 }: FadeInProps) {
-  const MotionTag = motion.create(as as any);
+  // Memoize so `motion.create` doesn't re-instantiate a component every render.
+  const MotionTag = useMemo(() => motion.create(as as any), [as]);
 
   return (
     <MotionTag

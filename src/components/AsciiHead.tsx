@@ -73,10 +73,13 @@ export default function AsciiHead() {
       }
     );
 
-    // Animation Loop
-    let animationFrameId: number;
+    // Animation Loop — gated on visibility so the WebGL/ASCII render only
+    // burns frames while the hero is actually on screen and the tab is shown.
+    let animationFrameId = 0;
     let mouseY = 0;
     let targetY = 0;
+    let inView = false;
+    let running = false;
 
     const onMouseMove = (event: MouseEvent) => {
       const { top, height } = mountRef.current!.getBoundingClientRect();
@@ -87,6 +90,7 @@ export default function AsciiHead() {
     window.addEventListener("mousemove", onMouseMove);
 
     const animate = () => {
+      if (!running) return;
       animationFrameId = requestAnimationFrame(animate);
 
       // Smooth mouse rotation (X axis only, Y disabled)
@@ -98,7 +102,37 @@ export default function AsciiHead() {
 
       effect.render(scene, camera);
     };
-    animate();
+
+    const start = () => {
+      if (running) return;
+      running = true;
+      animate();
+    };
+
+    const stop = () => {
+      running = false;
+      cancelAnimationFrame(animationFrameId);
+    };
+
+    const updateGate = () => {
+      if (inView && document.visibilityState === "visible") start();
+      else stop();
+    };
+
+    // Pause when the hero scrolls out of view.
+    const observer = new IntersectionObserver(
+      (entries) => {
+        inView = entries[0]?.isIntersecting ?? false;
+        updateGate();
+      },
+      // Start slightly before it enters, stop when fully gone.
+      { rootMargin: "0px 0px -20% 0px", threshold: 0 }
+    );
+
+    if (mountRef.current) observer.observe(mountRef.current);
+
+    // Pause when the tab is hidden; resume when it returns.
+    document.addEventListener("visibilitychange", updateGate);
 
     // Resize handler
     const handleResize = () => {
@@ -117,9 +151,11 @@ export default function AsciiHead() {
 
     // Cleanup
     return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", updateGate);
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("resize", handleResize);
-      cancelAnimationFrame(animationFrameId);
+      stop();
       if (mountRef.current && effect.domElement) {
         mountRef.current.removeChild(effect.domElement);
       }
